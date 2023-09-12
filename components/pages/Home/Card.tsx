@@ -25,9 +25,9 @@ const Card = ({
         <span className="text-slate-500 leading-6 font-semibold text-lg">
           {time}
         </span>
-        <span className="text-slate-400 leading-3 font-normal text-xs">
+        {/* <span className="text-slate-400 leading-3 font-normal text-xs">
           আর ২ মিনিট বাকি
-        </span>
+        </span> */}
       </div>
     </div>
   );
