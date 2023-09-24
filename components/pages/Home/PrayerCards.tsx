@@ -1,5 +1,6 @@
 import React from "react";
 import Card from "./Card";
+import MosqueSelector from "./MosqueSelector";
 
 const PrayerCards = () => {
   return (
@@ -9,24 +10,7 @@ const PrayerCards = () => {
           নামাজের সূচি
         </span>
 
-        <div className="flex flex-row items-center gap-1">
-          <label
-            htmlFor="template"
-            className="text-xs font-bold uppercase tracking-widest text-slate-500"
-          >
-            মসজিদ সিলেক্ট করুন
-          </label>
-          <select
-            className="form-select border py-2 px-1 rounded"
-            aria-label="Default select example"
-          >
-            <option selected>সেন্ট্রাল মসজিদ </option>
-            <option value="multi_image_offer_with_countdown">
-              বিন্দাবন মসজিদ
-            </option>
-            <option value="2">প্রান্তিক পার্ক মসজিদ </option>
-          </select>
-        </div>
+       <MosqueSelector/>
       </div>
       <div className="grid md:grid-cols-3 grid-cols-1 gap-2">
         <Card primaryName="ফজর" secondaryName="Fajr" time="5.20 am" />
